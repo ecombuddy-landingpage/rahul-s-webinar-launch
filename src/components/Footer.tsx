@@ -15,7 +15,8 @@ const Footer = () => {
         </div>
         
         <div className="mt-1 pt-1 border-t border-border text-center">
-          <p className="text-xs text-muted-foreground">Phone Number – +91 74286 38805 | Email – contact@risewithrahul.com<a href="tel:+917428638805" className="text-primary hover:underline">+91 74286 38805</a> | Email – <a href="mailto:contact@risewithrahul.com" className="text-primary hover:underline">contact@risewithrahul.com</a>
+          <p className="text-xs text-muted-foreground">
+            Phone Number – <a href="tel:+917428638805" className="text-primary hover:underline">+91 74286 38805</a> | Email – <a href="mailto:contact@risewithrahul.com" className="text-primary hover:underline">contact@risewithrahul.com</a>
           </p>
         </div>
         
