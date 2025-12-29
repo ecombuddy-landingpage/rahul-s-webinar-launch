@@ -3,6 +3,9 @@ name: Build & Deploy to Hostinger
 on:
   push:
     branches: [ main ]
+    paths-ignore:
+      - 'index.html'
+      - 'assets/**'
 
 permissions:
   contents: write
@@ -30,6 +33,6 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add index.html assets
+          git add -f index.html assets
           git commit -m "Deploy build to public_html root" || echo "No changes"
           git push
