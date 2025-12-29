@@ -15,17 +15,17 @@ const HeroSection = () => {
         {/* Top Badge */}
         <div className="flex justify-center mb-8">
           <div className="inline-flex items-center bg-secondary text-secondary-foreground rounded-full px-6 py-3 text-sm font-medium">
-            For Working Professionals & Aspiring Entrepreneurs
+            For Aspiring Brand Owners
           </div>
         </div>
 
         {/* Main Headline */}
         <div className="text-center max-w-4xl mx-auto mb-12">
           <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground leading-tight mb-2">
-            Join 2-Hours Live Masterclass And
+            Build Your Own Brand in 90 Days.
           </h1>
           <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
-            <span className="text-primary underline-hand">Launch Your Clothing Brand In Under ₹1 Lakh!</span>
+            <span className="text-primary underline-hand">Stop Renting, Start Owning.</span>
           </h2>
         </div>
 
