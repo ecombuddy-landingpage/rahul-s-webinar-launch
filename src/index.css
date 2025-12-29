@@ -5,7 +5,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap');
 
 @layer base {
+  /* Light mode (default when no class) */
   :root {
+    --background: 120 20% 97%;
+    --foreground: 220 15% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 15% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 15% 15%;
+
+    --primary: 145 65% 38%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 145 40% 92%;
+    --secondary-foreground: 145 65% 30%;
+
+    --muted: 120 15% 92%;
+    --muted-foreground: 220 10% 45%;
+
+    --accent: 145 50% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 120 10% 88%;
+    --input: 120 10% 88%;
+    --ring: 145 65% 38%;
+
+    --radius: 0.75rem;
+
+    /* Custom design tokens - Light */
+    --gradient-hero: linear-gradient(180deg, hsl(120 25% 96%) 0%, hsl(145 30% 94%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(145 65% 38%) 0%, hsl(145 70% 32%) 100%);
+    --shadow-soft: 0 4px 20px -4px hsl(145 30% 30% / 0.1);
+    --shadow-card: 0 2px 12px -2px hsl(0 0% 0% / 0.08);
+    --shadow-glow: 0 0 20px hsl(145 65% 45% / 0.2);
+    --shadow-glow-sm: 0 0 10px hsl(145 65% 45% / 0.15);
+    --shadow-glow-lg: 0 0 40px hsl(145 65% 45% / 0.25);
+  }
+
+  /* Dark mode */
+  .dark {
     --background: 150 20% 8%;
     --foreground: 120 15% 92%;
 
@@ -34,13 +77,14 @@
     --input: 150 15% 20%;
     --ring: 145 65% 45%;
 
-    --radius: 0.75rem;
-
-    /* Custom design tokens */
+    /* Custom design tokens - Dark */
     --gradient-hero: linear-gradient(180deg, hsl(150 20% 6%) 0%, hsl(150 25% 10%) 100%);
     --gradient-primary: linear-gradient(135deg, hsl(145 65% 45%) 0%, hsl(145 70% 38%) 100%);
     --shadow-soft: 0 4px 20px -4px hsl(145 50% 50% / 0.15);
     --shadow-card: 0 2px 12px -2px hsl(0 0% 0% / 0.4);
+    --shadow-glow: 0 0 25px hsl(145 65% 45% / 0.35);
+    --shadow-glow-sm: 0 0 12px hsl(145 65% 45% / 0.25);
+    --shadow-glow-lg: 0 0 50px hsl(145 65% 45% / 0.4);
   }
 }
 
@@ -74,6 +118,31 @@
 
   .shadow-card {
     box-shadow: var(--shadow-card);
+  }
+
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .shadow-glow-sm {
+    box-shadow: var(--shadow-glow-sm);
+  }
+
+  .shadow-glow-lg {
+    box-shadow: var(--shadow-glow-lg);
+  }
+
+  .glow-border {
+    @apply relative;
+  }
+
+  .glow-border::before {
+    content: '';
+    @apply absolute inset-0 rounded-lg;
+    background: var(--gradient-primary);
+    filter: blur(8px);
+    opacity: 0.4;
+    z-index: -1;
   }
 
   .underline-hand {

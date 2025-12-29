@@ -45,7 +45,7 @@ const HeroSection = () => {
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start max-w-6xl mx-auto">
           {/* Left - Image with Info */}
           <div className="relative">
-            <div className="relative rounded-2xl overflow-hidden shadow-soft">
+            <div className="relative rounded-2xl overflow-hidden shadow-glow">
               <img alt="Rahul Sharma receiving International Business Award" className="w-full h-auto object-contain" src="/lovable-uploads/c71cc348-0da2-478f-8f87-9d76a8fdbcab.png" />
               
               {/* Overlay Info */}
@@ -66,7 +66,7 @@ const HeroSection = () => {
           {/* Right - Info Cards */}
           <div className="space-y-6">
             <div className="grid grid-cols-2 gap-3 sm:gap-4">
-              {infoCards.map((card, index) => <div key={index} className="bg-card rounded-xl p-3 sm:p-5 shadow-card border border-border flex flex-col sm:flex-row items-center sm:items-start gap-2 sm:gap-4 text-center sm:text-left">
+              {infoCards.map((card, index) => <div key={index} className="bg-card rounded-xl p-3 sm:p-5 shadow-card hover:shadow-glow-sm transition-shadow duration-300 border border-border flex flex-col sm:flex-row items-center sm:items-start gap-2 sm:gap-4 text-center sm:text-left">
                   <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-secondary flex items-center justify-center shrink-0">
                     <card.icon className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
                   </div>
@@ -79,7 +79,7 @@ const HeroSection = () => {
             </div>
 
             {/* CTA Button */}
-            <a href="#register" className="block w-full bg-primary hover:bg-primary/90 text-primary-foreground text-center py-5 sm:py-6 rounded-xl font-bold text-lg sm:text-xl transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-[1.02] active:scale-[0.98] ring-4 ring-primary/30 animate-pulse-subtle">
+            <a href="#register" className="block w-full bg-primary hover:bg-primary/90 text-primary-foreground text-center py-5 sm:py-6 rounded-xl font-bold text-lg sm:text-xl transition-all duration-300 shadow-glow-lg hover:shadow-glow hover:scale-[1.02] active:scale-[0.98] ring-4 ring-primary/30 animate-pulse-subtle">
               🚀 Register Now At <span className="text-yellow-300 font-extrabold">Rs. 99/-</span>
             </a>
 

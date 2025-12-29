@@ -47,7 +47,7 @@ const MentorSection = () => {
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center max-w-6xl mx-auto mb-12 lg:mb-16">
           {/* Single Image */}
           <div className="relative w-full">
-            <div className="relative rounded-2xl overflow-hidden shadow-soft">
+            <div className="relative rounded-2xl overflow-hidden shadow-glow">
               <img
                 src={rahulTeaching}
                 alt="Rahul Sharma teaching at a workshop"
@@ -86,7 +86,7 @@ const MentorSection = () => {
             <div className="flex justify-center pt-2">
               <Button 
                 size="lg" 
-                className="text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 shadow-lg ring-4 ring-primary/30 animate-pulse-subtle hover:shadow-xl hover:scale-[1.02] transition-all duration-300 w-full sm:w-auto"
+                className="text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 shadow-glow-lg ring-4 ring-primary/30 animate-pulse-subtle hover:shadow-glow hover:scale-[1.02] transition-all duration-300 w-full sm:w-auto"
                 onClick={() => window.open("https://example.com/register", "_blank")}
               >
                 🚀 Register for the Masterclass Now
@@ -105,7 +105,7 @@ const MentorSection = () => {
             {successStories.map((story, index) => (
               <div
                 key={index}
-                className="bg-card border border-border rounded-xl p-4 sm:p-6 shadow-card hover:shadow-soft transition-shadow duration-300"
+                className="bg-card border border-border rounded-xl p-4 sm:p-6 shadow-card hover:shadow-glow-sm transition-shadow duration-300"
               >
                 <Quote className="w-6 h-6 sm:w-8 sm:h-8 text-primary/30 mb-3 sm:mb-4" />
                 <p className="text-muted-foreground text-xs sm:text-sm leading-relaxed mb-4 sm:mb-6">

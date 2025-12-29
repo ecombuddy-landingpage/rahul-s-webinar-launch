@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import HeroSection from "@/components/HeroSection";
 import ProblemSection from "@/components/ProblemSection";
 import WhoIsThisFor from "@/components/WhoIsThisFor";
@@ -9,10 +10,20 @@ import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 import StickyCtaBar from "@/components/StickyCtaBar";
 import ScrollAnimateWrapper from "@/components/ScrollAnimateWrapper";
+import ThemeToggle from "@/components/ThemeToggle";
 
 const Index = () => {
+  // Set dark mode as default on initial load
+  useEffect(() => {
+    const saved = localStorage.getItem("theme");
+    if (!saved) {
+      document.documentElement.classList.add("dark");
+    }
+  }, []);
+
   return (
     <main className="min-h-screen bg-background">
+      <ThemeToggle />
       <HeroSection />
       <ScrollAnimateWrapper>
         <WhoIsThisFor />
