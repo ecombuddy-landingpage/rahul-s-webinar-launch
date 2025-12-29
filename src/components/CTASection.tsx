@@ -1,6 +1,6 @@
 import { ArrowRight, Clock, Users } from "lucide-react";
 const CTASection = () => {
-  return <section id="register" className="pt-10 pb-16 bg-background relative overflow-hidden">
+  return <section id="register" className="pt-10 pb-8 bg-background relative overflow-hidden">
       <div className="container relative">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 text-foreground">
