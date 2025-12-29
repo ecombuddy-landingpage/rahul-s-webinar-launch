@@ -51,14 +51,14 @@ const HeroSection = () => {
               <img alt="Rahul Sharma receiving International Business Award" className="w-full h-full object-cover object-center absolute inset-0" src="/lovable-uploads/c71cc348-0da2-478f-8f87-9d76a8fdbcab.png" />
               
               {/* Overlay Info */}
-              <div className="absolute bottom-0 left-0 right-0 bg-foreground/85 backdrop-blur-md p-5">
-                <h3 className="font-display text-xl sm:text-2xl font-bold text-primary-foreground drop-shadow-lg mb-1">
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent p-5">
+                <h3 className="font-display text-xl sm:text-2xl font-bold text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] mb-1">
                   Rahul Sharma – Founder of Qurbat
                 </h3>
-                <p className="text-primary-foreground drop-shadow-md text-sm">
+                <p className="text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] text-sm">
                   (Multi-City Fashion Brand)
                 </p>
-                <p className="text-primary-foreground/90 drop-shadow-md text-xs mt-2">
+                <p className="text-white/90 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] text-xs mt-2">
                   IIM Ahmedabad Alumnus, 15L+ Community Mentor, TEDx Speaker & Retail Excellence Awardee
                 </p>
               </div>
