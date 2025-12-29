@@ -14,8 +14,8 @@ const HeroSection = () => {
       <div className="container">
         {/* Top Badge */}
         <div className="flex justify-center mb-8">
-          <div className="inline-flex items-center bg-secondary text-secondary-foreground rounded-full px-6 py-3 text-sm font-medium">
-            For Aspiring Brand Owners
+          <div className="inline-flex items-center bg-primary text-primary-foreground rounded-full px-8 py-4 text-base sm:text-lg font-bold shadow-lg animate-pulse-slow">
+            🎯 For Aspiring Brand Owners
           </div>
         </div>
 
