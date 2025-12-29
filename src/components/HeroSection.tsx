@@ -45,11 +45,11 @@ const HeroSection = () => {
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start max-w-6xl mx-auto">
           {/* Left - Image with Info */}
           <div className="relative">
-            <div className="relative rounded-2xl overflow-hidden shadow-glow">
-              <img alt="Rahul Sharma receiving International Business Award" className="w-full h-auto object-contain" src="/lovable-uploads/c71cc348-0da2-478f-8f87-9d76a8fdbcab.png" />
+            <div className="relative rounded-2xl overflow-hidden shadow-glow min-h-[450px] sm:min-h-[500px] lg:min-h-[550px]">
+              <img alt="Rahul Sharma receiving International Business Award" className="w-full h-full object-cover object-top absolute inset-0" src="/lovable-uploads/c71cc348-0da2-478f-8f87-9d76a8fdbcab.png" />
               
               {/* Overlay Info */}
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-foreground/90 via-foreground/70 to-transparent p-6">
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-foreground/80 via-foreground/50 to-transparent p-4">
                 <h3 className="font-display text-xl sm:text-2xl font-bold text-primary-foreground mb-1">
                   Rahul Sharma – Founder of Qurbat
                 </h3>

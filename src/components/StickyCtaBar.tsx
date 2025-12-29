@@ -7,7 +7,7 @@ const StickyCtaBar = () => {
         <div className="flex flex-col sm:flex-row items-center justify-between gap-3">
           <div className="text-primary-foreground text-center sm:text-left">
             <p className="font-bold text-sm sm:text-base">
-              Limited Seats Available — Only 100 Spots!
+              🚨 Hurry! Only a few seats left
             </p>
             <p className="text-primary-foreground/80 text-xs sm:text-sm hidden sm:block">
               Join the 2-Hour Live Masterclass and transform your business
