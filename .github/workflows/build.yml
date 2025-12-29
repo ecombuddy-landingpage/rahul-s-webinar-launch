@@ -3,16 +3,12 @@ name: Build & Deploy to Hostinger
 on:
   push:
     branches: [ main ]
-    paths-ignore:
-      - 'index.html'
-      - 'assets/**'
 
 permissions:
   contents: write
 
 jobs:
   build:
-    if: ${{ !contains(github.event.head_commit.message, 'Deploy') }}
     runs-on: ubuntu-latest
 
     steps:
@@ -25,15 +21,13 @@ jobs:
       - run: npm ci
       - run: npm run build
 
-      - name: Prepare root build
-        run: |
-          rm -rf assets index.html
-          cp -r dist/* .
-
-      - name: Commit only build files
+      - name: Deploy to Hostinger via Git
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add index.html assets favicon.ico
+          git checkout -b deploy || git checkout deploy
+          rm -rf ./*
+          cp -r dist/* ./
+          git add .
           git commit -m "Deploy build to public_html" || echo "No changes"
-          git push
+          git push origin deploy
