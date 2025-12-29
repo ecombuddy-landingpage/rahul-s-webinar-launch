@@ -8,18 +8,33 @@ import BonusSection from "@/components/BonusSection";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 import StickyCtaBar from "@/components/StickyCtaBar";
+import ScrollAnimateWrapper from "@/components/ScrollAnimateWrapper";
 
 const Index = () => {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen bg-background">
       <HeroSection />
-      <WhoIsThisFor />
-      <ProblemSection />
-      <PhaseSection />
-      <MentorSection />
-      <WhatYouGet />
-      <BonusSection />
-      <CTASection />
+      <ScrollAnimateWrapper>
+        <WhoIsThisFor />
+      </ScrollAnimateWrapper>
+      <ScrollAnimateWrapper delay={100}>
+        <ProblemSection />
+      </ScrollAnimateWrapper>
+      <ScrollAnimateWrapper delay={100}>
+        <PhaseSection />
+      </ScrollAnimateWrapper>
+      <ScrollAnimateWrapper delay={100}>
+        <MentorSection />
+      </ScrollAnimateWrapper>
+      <ScrollAnimateWrapper delay={100}>
+        <WhatYouGet />
+      </ScrollAnimateWrapper>
+      <ScrollAnimateWrapper delay={100}>
+        <BonusSection />
+      </ScrollAnimateWrapper>
+      <ScrollAnimateWrapper delay={100}>
+        <CTASection />
+      </ScrollAnimateWrapper>
       <Footer />
       <StickyCtaBar />
     </main>
