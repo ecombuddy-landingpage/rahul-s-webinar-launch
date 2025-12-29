@@ -4,8 +4,8 @@ const HeroSection = () => {
   const infoCards = [{
     icon: Calendar,
     label: "Date",
-    value: "27 December",
-    subtext: "(Saturday)"
+    value: "8th January",
+    subtext: "(Wednesday)"
   }, {
     icon: Clock,
     label: "Time",
@@ -37,7 +37,9 @@ const HeroSection = () => {
             Join 2-Hours Live Masterclass And
           </h1>
           <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
-            <span className="text-primary underline-hand">Build your own brand in 90 days. Stop Renting, Start Owning.</span>
+            <span className="text-primary underline-hand">Build your own brand in 90 days.</span>
+            <br />
+            <span className="text-primary underline-hand">Stop Renting, Start Owning.</span>
           </h2>
         </div>
 
@@ -45,18 +47,18 @@ const HeroSection = () => {
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start max-w-6xl mx-auto">
           {/* Left - Image with Info */}
           <div className="relative">
-            <div className="relative rounded-2xl overflow-hidden shadow-glow min-h-[450px] sm:min-h-[500px] lg:min-h-[550px]">
-              <img alt="Rahul Sharma receiving International Business Award" className="w-full h-full object-cover object-top absolute inset-0" src="/lovable-uploads/c71cc348-0da2-478f-8f87-9d76a8fdbcab.png" />
+            <div className="relative rounded-2xl overflow-hidden shadow-glow min-h-[400px] sm:min-h-[450px] lg:min-h-[500px]">
+              <img alt="Rahul Sharma receiving International Business Award" className="w-full h-full object-cover object-center absolute inset-0" src="/lovable-uploads/c71cc348-0da2-478f-8f87-9d76a8fdbcab.png" />
               
               {/* Overlay Info */}
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-foreground/80 via-foreground/50 to-transparent p-4">
-                <h3 className="font-display text-xl sm:text-2xl font-bold text-primary-foreground mb-1">
+              <div className="absolute bottom-0 left-0 right-0 bg-foreground/85 backdrop-blur-md p-5">
+                <h3 className="font-display text-xl sm:text-2xl font-bold text-primary-foreground drop-shadow-lg mb-1">
                   Rahul Sharma – Founder of Qurbat
                 </h3>
-                <p className="text-primary-foreground/80 text-sm">
+                <p className="text-primary-foreground drop-shadow-md text-sm">
                   (Multi-City Fashion Brand)
                 </p>
-                <p className="text-primary-foreground/70 text-xs mt-2">
+                <p className="text-primary-foreground/90 drop-shadow-md text-xs mt-2">
                   IIM Ahmedabad Alumnus, 15L+ Community Mentor, TEDx Speaker & Retail Excellence Awardee
                 </p>
               </div>

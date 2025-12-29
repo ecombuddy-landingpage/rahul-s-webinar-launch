@@ -1,6 +1,6 @@
 import { Award, Users, Briefcase, Instagram, Quote } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import rahulTeaching from "@/assets/rahul-teaching.jpg";
+import rahulPresenting from "@/assets/rahul-presenting.png";
 import avatarPriya from "@/assets/avatar-priya.png";
 import avatarImran from "@/assets/avatar-imran.png";
 import avatarRohan from "@/assets/avatar-rohan.png";
@@ -49,7 +49,7 @@ const MentorSection = () => {
           <div className="relative w-full">
             <div className="relative rounded-2xl overflow-hidden shadow-glow">
               <img
-                src={rahulTeaching}
+                src={rahulPresenting}
                 alt="Rahul Sharma teaching at a workshop"
                 className="w-full h-[400px] sm:h-[500px] lg:h-[600px] object-cover"
               />
