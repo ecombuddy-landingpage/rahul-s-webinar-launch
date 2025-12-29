@@ -47,7 +47,7 @@ const MentorSection = () => {
           {/* Single Image */}
           <div className="relative w-full">
             <div className="relative rounded-2xl overflow-hidden shadow-glow">
-              <img alt="Rahul Sharma teaching at a workshop" className="w-full h-[400px] sm:h-[500px] lg:h-[600px] object-cover" src={rahulTeaching} />
+              <img alt="Rahul Sharma teaching at a workshop" className="w-full h-[400px] sm:h-[500px] lg:h-[600px] object-cover" src={rahulTeaching} loading="lazy" width={965} height={600} />
             </div>
           </div>
 
@@ -94,7 +94,7 @@ const MentorSection = () => {
                   "{story.quote}"
                 </p>
                 <div className="flex items-center gap-3">
-                  <img src={story.avatar} alt={story.name} className="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover border-2 border-primary/20" />
+                  <img src={story.avatar} alt={story.name} className="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover border-2 border-primary/20" loading="lazy" width={48} height={48} />
                   <div>
                     <p className="font-semibold text-foreground text-sm sm:text-base">{story.name}</p>
                     <p className="text-xs text-muted-foreground">{story.title}</p>
