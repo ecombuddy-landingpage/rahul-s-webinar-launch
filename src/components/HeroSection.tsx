@@ -44,7 +44,7 @@ const HeroSection = () => {
           {/* Left - Image with Info */}
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-glow min-h-[400px] sm:min-h-[450px] lg:min-h-[500px]">
-              <img alt="Rahul Sharma receiving International Business Award" className="w-full h-full object-cover object-center absolute inset-0" src="/lovable-uploads/c71cc348-0da2-478f-8f87-9d76a8fdbcab.png" />
+              <img alt="Rahul Sharma receiving International Business Award" className="w-full h-full object-cover object-center absolute inset-0" src="/lovable-uploads/c71cc348-0da2-478f-8f87-9d76a8fdbcab.png" fetchPriority="high" width={750} height={500} />
               
               {/* Overlay Info */}
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent p-5">
