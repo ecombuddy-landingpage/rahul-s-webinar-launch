@@ -83,13 +83,15 @@ const MentorSection = () => {
               <cite className="text-primary font-medium mt-2 block">— Rahul Sharma</cite>
             </blockquote>
 
-            <Button 
-              size="lg" 
-              className="w-full sm:w-auto"
-              onClick={() => window.open("https://example.com/register", "_blank")}
-            >
-              Register Now
-            </Button>
+            <div className="flex justify-center">
+              <Button 
+                size="lg" 
+                className="text-lg px-8 py-6 shadow-soft hover:shadow-lg hover:scale-[1.02] transition-all duration-300"
+                onClick={() => window.open("https://example.com/register", "_blank")}
+              >
+                🚀 Register for the Masterclass Now
+              </Button>
+            </div>
           </div>
         </div>
 
